@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/login",
+    "pages/buycar/buycar",
+    "pages/classify/classify",
+    "pages/detail/detail"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#31313c",
+    "navigationBarTitleText": "优集品",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true
+  },
+  "tabBar":{
+    "color": "#fff",
+    "selectedColor": "#fff",
+    "backgroundColor":"#31313c",
+    "list":[{
+      "pagePath": "pages/index/index",
+      "text":"首页",
+      "iconPath": "images/logo_t.png",
+      "selectedIconPath":"images/logo_t.png"
+    }, {
+      "pagePath": "pages/classify/classify",
+      "text":"分类",
+      "iconPath": "images/search.png",
+      "selectedIconPath":"images/search.png"
+    },{
+      "pagePath": "pages/login/login",
+      "text":"登录/注册",
+      "iconPath": "images/login.png",
+      "selectedIconPath": "images/login.png"
+    }, {
+      "pagePath": "pages/buycar/buycar",
+      "text":"购物车",
+      "iconPath": "images/buycar.png",
+      "selectedIconPath":"images/buycar.png"
+    }
+
+    ]
+  }
+}

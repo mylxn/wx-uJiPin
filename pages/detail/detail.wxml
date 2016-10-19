@@ -1,0 +1,22 @@
+<view class="container">
+  <swiper indicator-dots="{{indicatordots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="detail-name">
+    {{detail_name}}
+  </view>
+  <view class="detail-price">
+    <span class="price-now">{{nowprice}}</span>
+    <span class="price-origin">{{marketprice}}</span>
+    <span class="sales">已售 {{hassaled}} 件</span>
+  </view>
+  <view class="detailpro">
+    
+  </view>
+
+</view>

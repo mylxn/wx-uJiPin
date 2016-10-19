@@ -1,0 +1,57 @@
+<view class="index-container" bindscrolltoupper="actionToupper">
+
+  <scroll-view hidden="{{loadmorehidden}}" scroll-y="true" bindscrolltolower="actionTolower" lower-threshold="1">
+    <view class="list-loading">
+      <loading hidden="{{loadinghidden}}">小u玩命加载中...</loading>
+    </view>
+
+    <view hidden="{{refreshhidden}}">
+        <button class="btn" plain="true" loading="true">刷新中...</button>
+    </view>
+    <swiper indicator-dots="{{indicatordots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <nav class="index-nav">
+      <ul>
+        <li>签到</li>
+        <li>分享</li>
+        <li>活动</li>
+        <li>分类</li>
+        <li>上新</li>
+      </ul>
+    </nav>
+    <view class="activity">
+      <ul>
+        <li class="lileft"><image src="/images/miaosha.jpeg"></image></li>
+        <li><image src="/images/newuser.jpeg"></image></li>
+      </ul>
+      <image src="/images/huanji.jpeg"></image>
+      <image src="/images/chef.jpeg"></image>
+    </view>
+    <view class="hotgood">
+      <text>—— · 热门商品 · ——</text>
+      <ul>
+        <navigator url="../detail/detail?id={{value.id}}" wx:for="{{list}}" wx:for-item="value">
+          <li>
+            <image src="{{value.img}}"></image>
+            <b class="pro">{{value.title}}</b>
+            <span class="red">{{value.nowprice}}</span>
+            <span class="del">{{value.marketprice}}</span>
+          </li>
+
+        </navigator>
+      </ul>
+
+    </view>
+    <view hidden="{{loadmorehidden}}">
+        <button class="btn" plain="true" loading="true">小u正在努力加载中...</button>
+    </view>
+
+  </scroll-view>
+
+</view>

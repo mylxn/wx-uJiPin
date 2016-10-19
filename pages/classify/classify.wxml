@@ -1,0 +1,21 @@
+<view class="container">
+  <ul>
+    <li class="{{current == 0 ? 'active' : ''}}" catchtap="switchSlider" data-index="0">分类</li>
+    <li class="{{current == 1 ? 'active' : ''}}" catchtap="switchSlider" data-index="1">品牌</li>
+    <li class="{{current == 2 ? 'active' : ''}}" catchtap="switchSlider" data-index="2">文章</li>
+  </ul>
+
+  <swiper duration="{{duration}}" bindchange="changeSlider">
+    <block>
+      <swiper-item>
+        123
+      </swiper-item>
+      <swiper-item>
+        456
+      </swiper-item>
+      <swiper-item>
+        789
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

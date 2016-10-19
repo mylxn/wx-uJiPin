@@ -1,0 +1,24 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+}
+.container ul{
+  display: flex;
+  background: #31313c;
+  height:80rpx;
+}
+.container ul li{
+  flex:1;
+  text-align: center;
+  color:#ccc;
+  font-size:14px;
+  line-height: 80rpx;
+}
+.container ul .active{
+  border-bottom:2px solid #fff;
+  color:#fff;
+}
+swiper{
+  flex:1;
+}

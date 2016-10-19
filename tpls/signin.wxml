@@ -1,0 +1,17 @@
+<template name="signin">
+  <view>
+    <modal>
+      <view class="section">
+        <label for="">
+          <text>用户名</text>
+          <input placeholder="请输入用户名"/>
+        </label>
+        <label>
+          <text>密码</text>
+          <input password="true"/>
+        </label>
+      </view>
+      
+    </modal>
+  </view>
+</template>

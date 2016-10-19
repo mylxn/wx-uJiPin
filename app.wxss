@@ -1,0 +1,12 @@
+/**app.wxss**/
+.container{
+  font:12px "微软雅黑";
+  box-sizing: border-box;
+  height:100%;
+}
+.index-container {
+  font:12px "微软雅黑";
+}
+page{
+  height:100%;
+}
