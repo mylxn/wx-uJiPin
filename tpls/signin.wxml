@@ -1,17 +1,17 @@
 <template name="signin">
   <view>
-    <modal>
+    <modal title="登录" hidden="{{modalHidden}}" confirm-text="确定" cancel-text="取消" bindconfirm="modalConfirm" bindcancel="modalCancel">
       <view class="section">
         <label for="">
-          <text>用户名</text>
-          <input placeholder="请输入用户名"/>
+          <text>用户名:</text>
+          <input placeholder="请输入用户名" value="{{username}}" bindinput="saveUsername"/>
         </label>
         <label>
-          <text>密码</text>
-          <input password="true"/>
+          <text>密码:</text>
+          <input password="true" placeholder="请输入密码" value="{{password}}" bindinput="savePassword"/>
         </label>
       </view>
-      
     </modal>
+    <text>{{haslogin}}</text>
   </view>
 </template>

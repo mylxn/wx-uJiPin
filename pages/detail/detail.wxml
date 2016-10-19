@@ -15,8 +15,13 @@
     <span class="price-origin">{{marketprice}}</span>
     <span class="sales">已售 {{hassaled}} 件</span>
   </view>
+
+
   <view class="detailpro">
-    
+    <view class="t">商品详情</view>
+    <block wx:for="{{p}}">
+      <text class="p">{{item}}</text>
+    </block>
   </view>
 
 </view>

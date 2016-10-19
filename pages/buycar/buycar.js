@@ -1,5 +1,6 @@
 Page({
   data: {
-    
+    nogoodshow:true
+
   }
 })

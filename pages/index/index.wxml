@@ -18,11 +18,21 @@
 
     <nav class="index-nav">
       <ul>
-        <li>签到</li>
-        <li>分享</li>
-        <li>活动</li>
-        <li>分类</li>
-        <li>上新</li>
+        <navigator url="../classify/classify">
+          <li>签到</li>
+        </navigator>
+        <navigator url="../classify/classify">
+          <li>分享</li>
+        </navigator>
+        <navigator url="../classify/classify">
+          <li>活动</li>
+        </navigator>
+        <navigator url="../classify/classify">
+          <li>分类</li>
+        </navigator>
+        <navigator url="../classify/classify">
+          <li>上新</li>
+        </navigator>
       </ul>
     </nav>
     <view class="activity">

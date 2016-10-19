@@ -1,0 +1,26 @@
+.nogoods{
+  text-align: center;
+  font-size: 14px;
+  color: #4F494B;
+  display: flex;
+  flex-direction: column;
+}
+.nogoods image{
+  width:160px;
+  height:120px;
+  margin:0 auto;
+}
+.nogoods .emptytext{
+    margin-top: 10px auto;
+}
+.nogoods navigator{
+    width: 144px;
+    height: 32px;
+    line-height: 32px;
+    background: #fff;
+    color: #B93A2C;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    margin: 20px auto 0;
+    font-size: 14px;
+}

@@ -1,3 +1,7 @@
-<view>
-  购物车
+<view class="container">
+  <view wx:if="{{nogoodshow}}" class="nogoods">
+    <image src="/images/cart_bj.png"></image>
+    <text class="emptytext">哎ma，购物袋是空的！</text>
+    <navigator url="/pages/index/index">去逛逛</navigator>
+  </view>
 </view>

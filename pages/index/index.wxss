@@ -16,7 +16,7 @@ scroll-view{
   display: flex;
   justify-content: space-around;
 }
-.index-nav ul li{
+.index-nav ul navigator{
   font-size:16px;
   color:#666;
   line-height: 40px;

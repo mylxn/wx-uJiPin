@@ -9,7 +9,8 @@ Page({
     detail_name:"",
     nowprice:"",
     marketprice:"",
-    hassaled:""
+    hassaled:"",
+    p:[]
   },
   onLoad: function (params) {
     this.setData({
@@ -30,12 +31,14 @@ Page({
               detail_name:res.data.goodname,
               nowprice:res.data.nowprice,
               marketprice:res.data.marketprice,
-              hassaled:res.data.hassaled
+              hassaled:res.data.hassaled,
+              // p:that.data.p.concat(res.data.p)
             })
           }
         })
       }
     });
+    console.log(this.data.p);
 
   }
 })
