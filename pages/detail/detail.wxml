@@ -19,8 +19,9 @@
 
   <view class="detailpro">
     <view class="t">商品详情</view>
-    <block wx:for="{{p}}">
-      <text class="p">{{item}}</text>
+    <block wx:for="{{p}}" wx:for-item="value">
+        <text class="p">{{value.txt}}</text>
+        <image src="{{value.txtimg}}"></image>
     </block>
   </view>
 

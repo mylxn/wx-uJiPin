@@ -32,13 +32,12 @@ Page({
               nowprice:res.data.nowprice,
               marketprice:res.data.marketprice,
               hassaled:res.data.hassaled,
-              // p:that.data.p.concat(res.data.p)
+              p:res.data.p
             })
           }
         })
       }
     });
-    console.log(this.data.p);
-
+// console.log(this.data.pimg);
   }
 })
